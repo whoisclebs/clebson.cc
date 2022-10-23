@@ -1,0 +1,14 @@
+{
+    "repositories": [
+        {
+            "name": "📝C4 Model Editor",
+            "url": "https://github.com/OctobearHub/c4-plantuml-editor",
+            "description": "C4 Model Plantuml editor, um editor de codigo para o diagrama c4 model."
+        },
+        {
+            "name": "🔍 Depenspect",
+            "url": "https://github.com/clebsonf/depenspect",
+            "description": " Uma biblioteca para inspecionar pacotes npm."
+        }
+    ]
+}
