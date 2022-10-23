@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import Footer from '../components/footer/footer'
 import Navbar from '../components/navbar/navbar'
-import aulas from '../data/aulas.json'
 export default function Artigos() {
 
   const [articles, setArticles] = useState([])

@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react"
+import { FaWindowClose } from "react-icons/fa";
 
 export default function Navbar() {
     const router = useRouter()
 
     const [selected, setSelected] = useState("");
+    const [toggleNav, setToggleNav] = useState(false)
 
     useEffect(() => {
         setSelected(router.pathname.substring(1));
@@ -73,11 +75,168 @@ export default function Navbar() {
                 </ul>
             </div>
             <div className="flex lg:hidden">
-                <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false"                     onClick={() => setToggleNav(!toggleNav)}>
                     <span className="sr-only">Abrir menu principal</span>
                     <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
                 </button>
             </div>
+            <ul
+                    className={`
+                md:hidden bg-white fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
+                duration-500 z-50 ${toggleNav ? "left-0" : "left-[-100%] "}
+                `}
+                >
+                    <button
+                        type="button"
+                        onClick={() => setToggleNav(!toggleNav)}
+                    >
+                        <FaWindowClose size="32" />
+                    </button>
+                        <li>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    setToggleNav(!toggleNav)
+                                    router.push("/")
+                                }}
+                            >
+                                <span
+                                    className="py-4 px-3 inline-block"
+                                    aria-current="page"
+                                >
+                                    Inicio
+                                </span>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    setToggleNav(!toggleNav)
+                                    router.push("/blog")
+                                }}
+                            >
+                                <span
+                                    className="py-4 px-3 inline-block"
+                                    aria-current="page"
+                                >
+                                    Blog
+                                </span>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    setToggleNav(!toggleNav)
+                                    router.push("/projetos")
+                                }}
+                            >
+                                <span
+                                    className="py-4 px-3 inline-block"
+                                    aria-current="page"
+                                >
+                                    Projetos
+                                </span>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    setToggleNav(!toggleNav)
+                                    router.push("/aulas")
+                                }}
+                            >
+                                <span
+                                    className="py-4 px-3 inline-block"
+                                    aria-current="page"
+                                >
+                                    Aulas
+                                </span>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    setToggleNav(!toggleNav)
+                                    router.push("/palestras")
+                                }}
+                            >
+                                <span
+                                    className="py-4 px-3 inline-block"
+                                    aria-current="page"
+                                >
+                                    Palestras
+                                </span>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    setToggleNav(!toggleNav)
+                                    router.push("http://ledthinking.com.br/")
+                                }}
+                            >
+                                <span
+                                    className="py-4 px-3 inline-block"
+                                    aria-current="page"
+                                >
+                                    @LedthinkingAcademy
+                                </span>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    setToggleNav(!toggleNav)
+                                    router.push("http://ecma.today/")
+                                }}
+                            >
+                                <span
+                                    className="py-4 px-3 inline-block"
+                                    aria-current="page"
+                                >
+                                    ECMA.TODAY
+                                </span>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    setToggleNav(!toggleNav)
+                                    router.push("http://octobear.org/")
+                                }}
+                            >
+                                <span
+                                    className="py-4 px-3 inline-block"
+                                    aria-current="page"
+                                >
+                                    Octobear Hub
+                                </span>
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    setToggleNav(!toggleNav)
+                                    router.push("https://ko-fi.com/clebsonf")
+                                }}
+                            >
+                                <span
+                                    className="py-4 px-3 inline-block"
+                                    aria-current="page"
+                                >
+                                    Me pague um ☕                   
+                                </span>
+                            </button>
+                        </li>
+                </ul>
         </div>
       </nav>
     )
