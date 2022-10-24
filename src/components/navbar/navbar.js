@@ -54,7 +54,7 @@ export default function Navbar() {
                 <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
                         <Link href="http://ledthinking.com.br/">
-                            <a className={`block py-2 pr-4 pl-3 ${selected === "elearning" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >@LedthinkingAcademy</a>
+                            <a className={`block py-2 pr-4 pl-3 ${selected === "elearning" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >Academy</a>
                         </Link>
                     </li>
                     <li>
@@ -184,7 +184,7 @@ export default function Navbar() {
                                     className="py-4 px-3 inline-block"
                                     aria-current="page"
                                 >
-                                    @LedthinkingAcademy
+                                    Academy
                                 </span>
                             </button>
                         </li>
