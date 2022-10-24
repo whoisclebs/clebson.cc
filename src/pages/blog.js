@@ -31,7 +31,7 @@ export default function Artigos() {
                                 <h3 className="pb-5 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                                     <a href="#">{subject.title}</a>
                                 </h3>
-                                <a target="_blank" href={subject.link} type="button" class="text-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 w-full" rel="noreferrer">Ler</a>
+                                <a target="_blank" href={subject.link} type="button" className="text-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 w-full" rel="noreferrer">Ler</a>
                             </div>
                             </div>
                         ))}
