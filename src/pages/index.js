@@ -18,8 +18,8 @@ export default function Home() {
               </p>
           </div>
           <div className="grid grid-cols-2 gap-4 mt-8">
-              <Image width={348.5} height={618} className="w-full rounded-lg" src="/clebson-2019.jpeg" alt="Clebson Augusto Fonseca no ano de 2019"/>
-              <Image width={348.5} height={618} className="mt-4 w-full lg:mt-10 rounded-lg" src="/clebson-2022.jpg" alt="Clebson Augusto fonseca no ano de 2022"/>
+              <Image width={348.5} height={618} className="w-full rounded-lg" priority src="/clebson-2019.jpeg" alt="Clebson Augusto Fonseca no ano de 2019"/>
+              <Image width={348.5} height={618} className="mt-4 w-full lg:mt-10 rounded-lg" priority={false} src="/clebson-2022.jpg" alt="Clebson Augusto fonseca no ano de 2022"/>
           </div>
         </div>
         <div className="pb-16 px-4 mx-auto max-w-screen-xl lg:pb-16 lg:px-6">
