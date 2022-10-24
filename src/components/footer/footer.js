@@ -14,7 +14,7 @@ export default function Footer() {
                     <FaStackOverflow/>
                     <span className="sr-only">Conta StackOverflow</span>
                 </a>
-                <a href="https://www.instagram.com/clebs.dev" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <a href="https://www.instagram.com/cl3bsonf" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     <FaInstagram/>
                     <span className="sr-only">Pagina Instagram</span>
                 </a>
@@ -30,7 +30,7 @@ export default function Footer() {
                     <FaYoutube/>
                     <span className="sr-only">Canal do youtube</span>
                 </a>
-                <a href="https://twitter.com/clebsf" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <a href="https://twitter.com/cl3bsonf" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     <FaTwitter/>
                     <span className="sr-only">Conta Twitter</span>
                 </a>
