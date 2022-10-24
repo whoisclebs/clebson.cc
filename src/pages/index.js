@@ -1,3 +1,4 @@
+import Image from 'next/future/image'
 import Footer from '../components/footer/footer'
 import Navbar from '../components/navbar/navbar'
 
@@ -17,8 +18,8 @@ export default function Home() {
               </p>
           </div>
           <div className="grid grid-cols-2 gap-4 mt-8">
-              <img className="w-full rounded-lg" src="/clebson-2019.jpeg" alt="Clebson Augusto Fonseca no ano de 2019"/>
-              <img className="mt-4 w-full lg:mt-10 rounded-lg" src="/clebson-2022.jpg" alt="Clebson Augusto fonseca no ano de 2022"/>
+              <Image width={348.5} height={618} className="w-full rounded-lg" src="/clebson-2019.jpeg" alt="Clebson Augusto Fonseca no ano de 2019"/>
+              <Image width={348.5} height={618} className="mt-4 w-full lg:mt-10 rounded-lg" src="/clebson-2022.jpg" alt="Clebson Augusto fonseca no ano de 2022"/>
           </div>
         </div>
         <div className="pb-16 px-4 mx-auto max-w-screen-xl lg:pb-16 lg:px-6">
@@ -28,7 +29,7 @@ export default function Home() {
                 <form className='pb-8' action="#">
                     <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                         <div className="relative w-full">
-                            <label for="email" className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
+                            <label htmlFor="email" className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
                             <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                                 <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
                             </div>

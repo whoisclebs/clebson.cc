@@ -4,7 +4,7 @@ import Head from 'next/head';
 function MyApp({ Component, pageProps }) {
   return <>
     <Head>
-      <meta charset="UTF-8"/>
+      <meta charSet="UTF-8"/>
       <title>Clebson</title>
       <link rel="icon" href="/favicon.ico" />
       <link rel="canonical" href="https://clebson.cc" />
