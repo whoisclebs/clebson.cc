@@ -11,16 +11,19 @@ export default function Artigos() {
     fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fpt.clebs.dev%2Frss').then(res => res.json())
     .then(data=> data.items)
     .then(items => items.map(element => {
-        var temp = Object.assign({}, element);
-        temp.description = temp.description.replace(/<h3.*?<\/h3>/g,"");
-        temp.description = temp.description.replace(/<figcaption.*?<\/figcaption>/g,"");
-        temp.description = temp.description.replace(/<\/?[^>]+(>|$)/g,"");
-        temp.description = temp.description.substring(0, 325) + '...';
+        let temp = Object.assign({}, element);
+        temp.alt = temp.description
+            .match(/<figcaption.*?<\/figcaption>/g)[0]
+            .replace(/<\/?[^>]+(>|$)/g,"") || "Imagem do artigo";
+        temp.description = temp.description
+            .replace(/<h3.*?<\/h3>/g,"")
+            .replace(/<figcaption.*?<\/figcaption>/g,"")
+            .replace(/<\/?[^>]+(>|$)/g,"")
+            .substring(0, 325) + '...';
         return temp
       })
     )
     .then(data => setArticles(data))
-    .then(data => console.log(data))
   }, [])
 
   return (
@@ -38,7 +41,7 @@ export default function Artigos() {
                         {articles.map((subject, index) => (
                             <div key={index} className="items-center bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <a href="#">
-                                <img width={420} height={175} className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src={subject.thumbnail} alt={"Thumbnail image"}/>
+                                <img width={420} height={175} className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src={subject.thumbnail} alt={subject.alt}/>
                             </a>
                             <div className="p-2">
                                 <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
