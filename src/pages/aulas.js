@@ -1,11 +1,12 @@
+import { getCookie, setCookies } from "cookies-next";
 import Image from "next/future/image";
 import Footer from "../components/footer/footer";
 import Navbar from "../components/navbar/navbar";
 import aulas from "../data/aulas.json";
 
-
 export default function Aulas() {
-    return (<section className="bg-white dark:bg-gray-900 min-h-screen">
+    return (
+    <section className="bg-white dark:bg-gray-900 min-h-screen">
         <Navbar></Navbar>
         <main className="py-8">
             <div className="pt-8 px-4 mx-auto max-w-screen-xl text-center lg:pt-16 lg:px-12">
@@ -53,7 +54,7 @@ programação</h1>
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Solicite sua 1° aula gratuita</h2>
                 <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Sua primeira aula particular de programação é GRÁTIS! Essa é uma forma de nos conhecermos melhor.</p>
-                <iframe className="w-full h-[80vh] md:h-[70vh]" src="https://docs.google.com/forms/d/e/1FAIpQLSd9dwcHO-50G2--sUGR0wcQUaJTgHEkfWkWhTPLjqQ70T3UWg/viewform?embedded=true"  frameBorder="0" marginHeight="0" marginWidth="0">Carregando…</iframe>
+                <iframe sandbox='allow-scripts allow-forms allow-same-origin' className="w-full h-[80vh] md:h-[70vh]" src="https://docs.google.com/forms/d/e/1FAIpQLSd9dwcHO-50G2--sUGR0wcQUaJTgHEkfWkWhTPLjqQ70T3UWg/viewform?embedded=true"  frameBorder="0" marginHeight="0" marginWidth="0">Carregando…</iframe>
                 <p className="font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Ou entre em contato por <a href="mailto:clebson.augusto@dcx.ufpb.br">clebson.augusto@dcx.ufpb.br</a> com o assunto do e-mail AULAS.</p>
             </div>
             <div className="py-4 lg:py-8 px-4 mx-auto max-w-screen-md">
