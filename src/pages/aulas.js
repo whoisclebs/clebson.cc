@@ -1,4 +1,3 @@
-import { getCookie, setCookies } from "cookies-next";
 import Image from "next/future/image";
 import Footer from "../components/footer/footer";
 import Navbar from "../components/navbar/navbar";
