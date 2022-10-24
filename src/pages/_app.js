@@ -1,8 +1,11 @@
 import '../../styles/globals.css'
 import Head from 'next/head';
+import Script from 'next/script'
+import GA from '../components/analytics/ga';
 
 function MyApp({ Component, pageProps }) {
   return <>
+    <GA/>
     <Head>
       <meta charSet="UTF-8"/>
       <title>Clebson</title>
