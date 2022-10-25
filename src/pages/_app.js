@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     <GA/>
     <Head>
       <meta charSet="UTF-8"/>
-      <title>Clebson</title>
+      <title>Clebson Augusto Fonseca</title>
       <link rel="icon" href="/favicon.ico" />
       <link rel="canonical" href="https://clebson.cc" />
       <meta name="keywords" content="Clebson, Professor particular, JavaScript, Node.js, Aulas, Java, Programação"/>
