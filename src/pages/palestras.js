@@ -6,6 +6,9 @@ export default function Sobre() {
   return (
     <section className="bg-white dark:bg-gray-900 min-h-screen">
         <Navbar></Navbar>
+        <Head>
+            <title>Palestras</title>
+        </Head>
         <main className="gap-16 items-center py-8 px-4 mx-auto">
             <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                 <div className="max-w-screen-md">
