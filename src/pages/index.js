@@ -38,32 +38,33 @@ export default function Home() {
         </div>
         <div className="pb-16 px-4 mx-auto max-w-screen-xl lg:pb-16 lg:px-6"> 
         <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Conquistas:</h2>
-          <ol class="relative border-l border-gray-200 dark:border-gray-700">                  
-              <li class="mb-10 ml-4">
-                  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <span className="leading-none text-gray-400 dark:text-gray-500">Concedido(s) por Campus party ·<time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time></span>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-1º lugar Hackathon Reboot The World, Campus party Digital - Goiás - 2021</h3>
-                  <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Durante o ano 2021, finalmente veio o tão sonhado primeiro lugar. Tinhamos lançado nossa ferramenta de dados abertos, strike.tours, uma rede social que formentaria o turismo da região de Goiás.</p>
+          <ol className="relative border-l border-gray-200 dark:border-gray-700">                  
+              <li className="mb-10 ml-4">
+                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                  <span className="leading-none text-gray-400 dark:text-gray-500">Concedido(s) por Campus party ·<time dateTime="2020-08-06 17:00" className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">ago 2021</time></span>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                    1º lugar Hackathon Reboot The World, Campus party Digital - Goiás - 2021
+                  </h3>
+                  <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Durante o ano 2021, finalmente veio o tão sonhado primeiro lugar. Tinhamos lançado nossa ferramenta de dados abertos, strike.tours, uma rede social que formentaria o turismo da região de Goiás.</p>
                   <a target="_blank" className="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700" href='https://www.desenvolvimento.go.gov.br/noticias/4177-passaporte-digital-para-turistas-vence-hackathon-na-campus-party-digital-goias.html' rel="noreferrer">Leia sobre</a>
               </li>
-              <li class="mb-10 ml-4">
-                  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <span className="leading-none text-gray-400 dark:text-gray-500">Concedido(s) por Campus party ·<time datetime="2020-08-29 17:00" class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">ago 2020</time></span>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">2º lugar hackaton desafio com dados abertos, Campus party Digital - Goiás 2020</h3>
-                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">Em 2020 tive minha segunda experiencia com hackathon, quase 1 ano depois do meu primeiro hackathon, lá estava eu de novo, nosso desafio era criar uma solução utilizando dados abertos do estado de Goiás. Ficamos em segundo lugar com uma ferramenta de gestão financeira.</p>
+              <li className="mb-10 ml-4">
+                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                  <span className="leading-none text-gray-400 dark:text-gray-500">Concedido(s) por Campus party ·<time dateTime="2020-07-11 17:00" className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">jul 2020</time></span>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">2º lugar hackaton desafio com dados abertos, Campus party Digital - Goiás 2020</h3>
+                  <p className="text-base font-normal text-gray-500 dark:text-gray-400">Em 2020 tive minha segunda experiencia com hackathon, quase 1 ano depois do meu primeiro hackathon, lá estava eu de novo, nosso desafio era criar uma solução utilizando dados abertos do estado de Goiás. Ficamos em segundo lugar com uma ferramenta de gestão financeira.</p>
               </li>
-              <li class="mb-10 ml-4">
-                  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <span className="leading-none text-gray-400 dark:text-gray-500">Concedido(s) por UFPB · <time datetime="2020-02-14 20:00" class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">fev de 2020</time></span>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Prêmio iniciação a docência.</h3>
-                  <p class="text-base font-normal text-gray-500 dark:text-gray-400"> Uma vez por ano são apresentados todos os trabalhos dos últimos 2 períodos na faculdade e cada campus tem a autonomia de premiar alguns dos trabalhos apresentados e no encontro unificado de 2019 o nosso trabalho de &quot;Tutoria de introdução a programação: relatos e experiencias.&quot; recebeu a premiação de iniciação a docência.</p>
+              <li className="mb-10 ml-4">
+                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                  <span className="leading-none text-gray-400 dark:text-gray-500">Concedido(s) por UFPB · <time dateTime="2020-02-14 20:00" className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">fev de 2020</time></span>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Prêmio iniciação a docência.</h3>
+                  <p className="text-base font-normal text-gray-500 dark:text-gray-400"> Uma vez por ano são apresentados todos os trabalhos dos últimos 2 períodos na faculdade e cada campus tem a autonomia de premiar alguns dos trabalhos apresentados e no encontro unificado de 2019 o nosso trabalho de &quot;Tutoria de introdução a programação: relatos e experiencias.&quot; recebeu a premiação de iniciação a docência.</p>
               </li>
-              <li class="ml-4">
-                  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                  <span className="leading-none text-gray-400 dark:text-gray-500">Concedido(s) por Campus party ·<time datetime="2019-02-17 14:00" class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">ago de 2019</time></span>
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">3º lugar hackaton Micro Learning, Campus party - RN</h3>
-                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">Em 2019 tive a oportunidade de participar do meu primeiro hackaton e minha primeira campus party, nosso desafio era criar uma solução de micro learning para melhorar a capacitação dos servidores públicos do estado do RN, infelizmente não conquistamos o primeiro lugar, mas foi uma ótima oportunidade, fizemos amigos, aprendemos coisas novas e ficou a experiencia.</p>
+              <li className="ml-4">
+                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                  <span className="leading-none text-gray-400 dark:text-gray-500">Concedido(s) por Campus party ·<time dateTime="2019-02-17 14:00" className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">ago de 2019</time></span>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">3º lugar hackaton Micro Learning, Campus party - RN</h3>
+                  <p className="text-base font-normal text-gray-500 dark:text-gray-400">Em 2019 tive a oportunidade de participar do meu primeiro hackaton e minha primeira campus party, nosso desafio era criar uma solução de micro learning para melhorar a capacitação dos servidores públicos do estado do RN, infelizmente não conquistamos o primeiro lugar, mas foi uma ótima oportunidade, fizemos amigos, aprendemos coisas novas e ficou a experiencia.</p>
               </li>
           </ol>
         </div>
