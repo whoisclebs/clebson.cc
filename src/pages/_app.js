@@ -15,6 +15,17 @@ function MyApp({ Component, pageProps }) {
       <meta name="description" content="Clebson Augusto Fonseca é Engenheiro de software, professor, palestrante e criador de conteúdo. Atualmente é professor particular, tem o foco em distribuir conhecimento para o máximo de alunos possível e contribuir com o open source." />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="author" content="Clebson Augusto Fonseca" />
+      <meta property="og:type" content="website"/>
+      <meta property="og:url" content="https://clebson.cc/"/>
+      <meta property="og:title" content="Clebson Augusto Fonseca"/>
+      <meta property="og:description" content="Clebson é Engenheiro de software, professor, palestrante e criador de conteúdo. Atualmente é professor particular, tem o foco em distribuir conhecimento para o máximo de alunos possível e contribuir com o open source."/>
+      <meta property="og:image" content="/preview.png"/>
+
+      <meta property="twitter:card" content="summary_large_image"/>
+      <meta property="twitter:url" content="https://clebson.cc/"/>
+      <meta property="twitter:title" content="Clebson Augusto Fonseca"/>
+      <meta property="twitter:description" content="Clebson é Engenheiro de software, professor, palestrante e criador de conteúdo. Atualmente é professor particular, tem o foco em distribuir conhecimento para o máximo de alunos possível e contribuir com o open source."/>
+      <meta property="twitter:image" content="/preview.png"></meta>
     </Head>
     <Component {...pageProps} />
   </>
