@@ -37,7 +37,7 @@ export default function Artigos() {
                 <h1 className="mt-2 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Meu blog como um <span className="text-blue-600 dark:text-blue-500">hobbie</span>.</h1>
                 <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Diretorio para postagens aleatorias</p>
                 <div className="px-4 mx-auto max-w-screen-xl lg:px-40 py-8">
-                    <div className="grid gap-8 mb-6 lg:mb-16 grid-cols-2 ">
+                    <div className="grid gap-8 mb-6 lg:mb-16 grid-cols-1  md:grid-cols-2">
                         {articles.map((subject, index) => (
                             <div key={index} className="items-center bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <a href="#">
