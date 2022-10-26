@@ -3,6 +3,23 @@ import Head from 'next/head';
 import Script from 'next/script'
 import GA from '../components/analytics/ga';
 
+const schemaData = {
+  "@context": "http://www.schema.org",
+  "@type": "person",
+  "name": "Clebson Augusto Fonseca",
+  "jobTitle": "Desenvolvedor | Professor | Palestrante | Open source Lover",
+  "url": "https://clebson.cc/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Jacaraú",
+    "addressRegion": "Paraíba",
+    "postalCode": "58278-000",
+    "addressCountry": "Brasil"
+  },
+  "email": "clebson.augusto@dcx.ufpb.br",
+  "birthDate": "1999-09-24"
+}
+
 function MyApp({ Component, pageProps }) {
   return <>
     <GA/>
@@ -30,25 +47,10 @@ function MyApp({ Component, pageProps }) {
     <Script id='google ads' async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4440029794243758"
      crossorigin="anonymous">
     </Script>
-    <Script 
+    <script 
       id='ld+json'
       type='application/ld+json'
-      dangerouslySetInnerHTML={{__html: JSON.stringify({
-          "@context": "http://www.schema.org",
-          "@type": "person",
-          "name": "Clebson Augusto Fonseca",
-          "jobTitle": "Desenvolvedor | Professor | Palestrante | Open source Lover",
-          "url": "https://clebson.cc/",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Jacaraú",
-            "addressRegion": "Paraíba",
-            "postalCode": "58278-000",
-            "addressCountry": "Brasil"
-          },
-          "email": "clebson.augusto@dcx.ufpb.br",
-          "birthDate": "1999-09-24"
-      })}}
+      dangerouslySetInnerHTML={{__html: JSON.stringify(schemaData)}}
     />
   </>
 }
