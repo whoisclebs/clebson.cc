@@ -3,12 +3,34 @@ import Head from 'next/head'
 import Footer from '../components/footer/footer'
 import Navbar from '../components/navbar/navbar'
 
+const schemaData = {
+  "@context": "http://www.schema.org",
+  "@type": "person",
+  "name": "Clebson Augusto Fonseca",
+  "jobTitle": "Desenvolvedor | Professor | Palestrante | Open source Lover",
+  "url": "https://clebson.cc/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Jacaraú",
+    "addressRegion": "Paraíba",
+    "postalCode": "58278-000",
+    "addressCountry": "Brasil"
+  },
+  "email": "clebson.augusto@dcx.ufpb.br",
+  "birthDate": "1999-09-24"
+}
+
 export default function Home() {
   return (
     <section className="bg-white dark:bg-gray-900 min-h-screen">
       <Navbar/>
       <Head>
         <title>Clebson Augusto Fonseca - Sobre min</title>
+        <script 
+          id='ld+json'
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{__html: JSON.stringify(schemaData)}}
+        />
       </Head>
       <main>
         <div className="gap-16 items-center py-16 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
