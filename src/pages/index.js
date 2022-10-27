@@ -21,12 +21,34 @@ export default function Home() {
               <p>
                 🌱 Hoje meu foco em estudo é arquitetura limpa, web3.0, webassembly e japonês. Também curto trabalhar com open-source e participar de bastante hackathons, por mais que eu esteja sumidos nesses ultimos tempos.
               </p>
+              <div className="flex justify-center pt-4">
+                <div class="inline-flex rounded-md shadow-sm" role="group">
+                  <a href="https://calendly.com/clebson-augusto/60min?month=2022-09&date=2022-09-05" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-l-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                    Agendar uma aula
+                  </a>
+                  <a href="https://ledthinking.com.br/bootcamps" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                    Bootcamps
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCTXNglaqvIsBtXpNLe_KTsw" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-r-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                    Materiais gratuitos
+                  </a>
+                </div>
+              </div>
+
           </div>
           <div className="grid grid-cols-2 gap-4 mt-8">
               <Image width={348.5} height={618} className="w-full rounded-lg" priority src="/clebson-2019.jpeg" alt="Clebson Augusto Fonseca no ano de 2019" />
               <Image width={348.5} height={618} className="mt-4 w-full lg:mt-10 rounded-lg" priority={false} src="/clebson-2022.jpg" alt="Clebson Augusto fonseca no ano de 2022"/>
           </div>
+          <img src='/superprof.png' alt="Banner clebson site superprof." />
+          <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+              <h2 className="text-4xl tracking-tight font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-orange-400">Sou um superprof</h2>
+              <p className="mb-4"> 
+                 Em 2021 fui classificado como um superprofessor na plataforma superprof. Desde então tem sido um prazer ministrar aulas para todos os diversos niveis e os mais variados assuntos de programação.
+              </p>
+          </div>
         </div>
+
         <div className="mb-28 pb-16 px-4 mx-auto max-w-screen-xl lg:pb-16 lg:px-6"> 
         <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Conquistas:</h2>
           <ol className="relative border-l border-gray-200 dark:border-gray-700">                  
