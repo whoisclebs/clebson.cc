@@ -93,7 +93,7 @@ export default function Home() {
               <Image width={348.5} height={618} className="mt-4 w-full lg:mt-10 rounded-lg" priority={false} src="/clebson-2022.jpg" alt="Clebson Augusto fonseca no ano de 2022"/>
           </div>
         </div>
-        <div className="pb-16 px-4 mx-auto max-w-screen-xl lg:pb-16 lg:px-6"> 
+        <div className="mb-28 pb-16 px-4 mx-auto max-w-screen-xl lg:pb-16 lg:px-6"> 
         <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Conquistas:</h2>
           <ol className="relative border-l border-gray-200 dark:border-gray-700">                  
               <li className="mb-10 ml-4">
@@ -125,6 +125,8 @@ export default function Home() {
               </li>
           </ol>
         </div>
+{
+        /*      
         <div className="pb-16 px-4 mx-auto max-w-screen-xl lg:pb-16 lg:px-6">
             <div className="mx-auto max-w-screen-md sm:text-center pb-50">
                 <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Cadastre-se no newsletter</h2>
@@ -144,10 +146,11 @@ export default function Home() {
                     </div>
                 </form>
             </div>
-        </div>
-
+        </div> 
+        */
+}
       </main>
-      <Footer></Footer>
+      <Footer className="mb-28" ></Footer>
     </section>
   )
 }
