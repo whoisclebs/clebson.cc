@@ -49,6 +49,30 @@ export default function Home() {
           </div>
         </div>
 
+        <section class="bg-white dark:bg-gray-900">
+          <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+              <h2 className="pb-4 text-4xl tracking-tight font-extrabold">
+                <span className="text-transparent bg-clip-text  bg-gradient-to-l from-slate-500 via-slate-600 to-slate-700">
+                  Mais de...
+                </span>
+              </h2>
+              <dl class="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
+                  <div class="flex flex-col items-center justify-center">
+                      <dt class="mb-2 text-3xl md:text-4xl font-extrabold">100</dt>
+                      <dd class="font-light text-gray-500 dark:text-gray-400">alunos</dd>
+                  </div>
+                  <div class="flex flex-col items-center justify-center">
+                      <dt class="mb-2 text-3xl md:text-4xl font-extrabold">200</dt>
+                      <dd class="font-light text-gray-500 dark:text-gray-400">horas de conteudo</dd>
+                  </div>
+                  <div class="flex flex-col items-center justify-center">
+                      <dt class="mb-2 text-3xl md:text-4xl font-extrabold">5</dt>
+                      <dd class="font-light text-gray-500 dark:text-gray-400">anos de mercado</dd>
+                  </div>
+              </dl>
+          </div>
+        </section>
+
         <div className="mb-28 pb-16 px-4 mx-auto max-w-screen-xl lg:pb-16 lg:px-6"> 
         <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Conquistas:</h2>
           <ol className="relative border-l border-gray-200 dark:border-gray-700">                  
