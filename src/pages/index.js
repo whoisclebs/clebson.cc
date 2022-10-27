@@ -79,16 +79,7 @@ export default function Home() {
       <main>
         <div className="gap-16 items-center py-16 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-          <h1 className="mb-4 text-2xl tracking-tight font-extrabold text-gray-900 dark:text-white">Clebson Augusto Fonseca</h1>
-
-            <ol className="inline-flex items-center space-x-1 md:space-x-3">
-              <li className="inline-flex items-center">
-                <a href="#" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-                  <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
-                  Home
-                </a>
-              </li>
-            </ol>
+              <h1 className="text-2xl tracking-tight font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Clebson Augusto Fonseca</h1>
               <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Sobre mim:</h2>
               <p className="mb-4"> 
                 Me chamo Clebson, 🔭 atualmente trabalho na @Ledthinking e na @LedthinkingAcademy. Programo desde os meus 12 anos e busco sempre evoluir cada vez mais, para celebrar esses 10 anos de programação, resolvi criar esse blog para compartilhar um pouco do meu conhecimento, conquista e experiência com vocês.

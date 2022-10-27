@@ -47,7 +47,7 @@ export default function Navbar() {
             </div>
             <Link href="/" className="flex items-center">
                 <a>
-                    <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">CLEBSON</span>
+                    <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">CLEBSON<span className="bg-gradient-to-r from-blue-100 via-cyan-100 to-cyan-200 text-cyan-800 font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">.CC</span></span>
                 </a>
             </Link>
             <div className="hidden justify-between items-center w-full lg:flex md:w-auto md:order-1" id="navbar-sticky">
