@@ -7,7 +7,7 @@ import aulas from "../data/aulas.json";
 export default function Aulas() {
     return (
     <section className="bg-white dark:bg-gray-900 min-h-screen">
-        <Navbar></Navbar>
+        <Navbar/>
         <Head>
             <title>Aula particular com Clebson Augusto Fonseca</title>
             <meta name="description" content="Aulas particulares com Clebson Augusto, aprenda javascript, react, node, express, next e todo ambiente Javascript. Primeira aula grátis." />

@@ -3,78 +3,12 @@ import Head from 'next/head'
 import Footer from '../components/footer/footer'
 import Navbar from '../components/navbar/navbar'
 
-const schemaData = {
-  "@context": "http://www.schema.org",
-  "@type": "Person",
-  "name": "Clebson Augusto Fonseca",
-  "disambiguatingDescription": "Founder Ledthinking Academy, Software Engineer, Professor, Palestrante e Criador de Conteúdo",
-  "alternateName": "Clebson Augusto",
-  "nationality": "Brasileiro",
-  "jobTitle": "Professor",
-  "gender": "Male",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Jacaraú",
-    "addressRegion": "Paraíba",
-    "postalCode": "58278-000",
-    "addressCountry": "Brasil"
-  },
-  "worksFor": [
-    {
-      "@type": "Organization",
-      "name": "Ledthinking",
-      "url": "https://ledthinking.com.br/",
-      "sameAs": [
-        "https://twitter.com/ledthinking",
-        "https://www.facebook.com/ledthinking",
-        "https://www.linkedin.com/company/ledthinking",
-        "https://www.linkedin.com/school/ledthinking-academy",
-        "https://www.instagram.com/ledthinking",
-        "https://www.instagram.com/ledthinking.academy"
-      ]
-    }
-  ],
-  "alumniOf": [
-    {
-     "@type": "CollegeOrUniversity",
-     "name": "Universidade Federal da Paraíba",
-     "sameAs": "https://pt.wikipedia.org/wiki/Universidade_Federal_da_Para%C3%ADba"
-    }
-  ],
-  "email": "clebson.augusto@dcx.ufpb.br",
-  "birthDate": "1999-09-24",
-  "birthPlace" : {
-    "@type": "Place",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Jacaraú",
-      "addressRegion": "Paraíba",
-      "addressCountry": "Brasil"
-    }
-  },
-  "url": "https://clebson.cc/",
-  "sameAs": [
-    "https://twitter.com/cl3bsonf",
-    "https://www.linkedin.com/in/clebsonf/",
-    "https://stackoverflow.com/users/20201406/clebsonf",
-    "https://instagram.com/cl3bsonf",
-    "https://www.linkedin.com/in/clebsonf/",
-    "https://medium.com/@clebson",
-    "https://dev.to/clebsonf"
-  ]
-}
-
 export default function Home() {
   return (
     <section className="bg-white dark:bg-gray-900 min-h-screen">
       <Navbar/>
       <Head>
         <title>Clebson Augusto Fonseca - Sobre min</title>
-        <script 
-          id='ld+json'
-          type='application/ld+json'
-          dangerouslySetInnerHTML={{__html: JSON.stringify(schemaData)}}
-        />
       </Head>
       <main>
         <div className="gap-16 items-center py-16 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
@@ -89,7 +23,7 @@ export default function Home() {
               </p>
           </div>
           <div className="grid grid-cols-2 gap-4 mt-8">
-              <Image width={348.5} height={618} className="w-full rounded-lg" priority src="/clebson-2019.jpeg" alt="Clebson Augusto Fonseca no ano de 2019"/>
+              <Image width={348.5} height={618} className="w-full rounded-lg" priority src="/clebson-2019.jpeg" alt="Clebson Augusto Fonseca no ano de 2019" />
               <Image width={348.5} height={618} className="mt-4 w-full lg:mt-10 rounded-lg" priority={false} src="/clebson-2022.jpg" alt="Clebson Augusto fonseca no ano de 2022"/>
           </div>
         </div>
