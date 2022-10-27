@@ -11,8 +11,8 @@ export default function Home() {
         <title>Clebson Augusto Fonseca - Sobre min</title>
       </Head>
       <main>
-        <div className="gap-16 items-center py-16 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-          <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+        <div className="gap-16 items-center py-16 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6 ">
+          <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400 ">
               <h1 className="text-2xl tracking-tight font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Clebson Augusto Fonseca</h1>
               <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Sobre mim:</h2>
               <p className="mb-4"> 
@@ -44,7 +44,7 @@ export default function Home() {
           <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               <h2 className="text-4xl tracking-tight font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-orange-400">Sou um superprof</h2>
               <p className="mb-4"> 
-                 Em 2021 fui classificado como um superprofessor na plataforma superprof. Desde então tem sido um prazer ministrar aulas para todos os diversos niveis e os mais variados assuntos de programação.
+                Em 2021 fui classificado como um superprofessor na plataforma superprof. Desde então tem sido um prazer ministrar aulas para todos os diversos niveis e os mais variados assuntos de programação.
               </p>
           </div>
         </div>
