@@ -22,14 +22,14 @@ export default function Home() {
                 🌱 Hoje meu foco em estudo é arquitetura limpa, web3.0, webassembly e japonês. Também curto trabalhar com open-source e participar de bastante hackathons, por mais que eu esteja sumidos nesses ultimos tempos.
               </p>
               <div className="flex justify-center pt-4">
-                <div class="inline-flex rounded-md shadow-sm" role="group">
-                  <a href="https://calendly.com/clebson-augusto/60min?month=2022-09&date=2022-09-05" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-l-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                <div className="inline-flex rounded-md shadow-sm" role="group">
+                  <a href="https://calendly.com/clebson-augusto/60min?month=2022-09&date=2022-09-05" className="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-l-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
                     Agendar uma aula
                   </a>
-                  <a href="https://ledthinking.com.br/bootcamps" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                  <a href="https://ledthinking.com.br/bootcamps" className="py-2 px-4 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
                     Bootcamps
                   </a>
-                  <a href="https://www.youtube.com/channel/UCTXNglaqvIsBtXpNLe_KTsw" class="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-r-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                  <a href="https://www.youtube.com/channel/UCTXNglaqvIsBtXpNLe_KTsw" className="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-r-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
                     Materiais gratuitos
                   </a>
                 </div>
@@ -49,25 +49,25 @@ export default function Home() {
           </div>
         </div>
 
-        <section class="bg-white dark:bg-gray-900">
-          <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+        <section className="bg-white dark:bg-gray-900">
+          <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
               <h2 className="pb-4 text-4xl tracking-tight font-extrabold">
                 <span className="text-transparent bg-clip-text  bg-gradient-to-l from-slate-500 via-slate-600 to-slate-700">
                   Mais de...
                 </span>
               </h2>
-              <dl class="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
-                  <div class="flex flex-col items-center justify-center">
-                      <dt class="mb-2 text-3xl md:text-4xl font-extrabold">100</dt>
-                      <dd class="font-light text-gray-500 dark:text-gray-400">alunos</dd>
+              <dl className="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
+                  <div className="flex flex-col items-center justify-center">
+                      <dt className="mb-2 text-3xl md:text-4xl font-extrabold">100</dt>
+                      <dd className="font-light text-gray-500 dark:text-gray-400">alunos</dd>
                   </div>
-                  <div class="flex flex-col items-center justify-center">
-                      <dt class="mb-2 text-3xl md:text-4xl font-extrabold">200</dt>
-                      <dd class="font-light text-gray-500 dark:text-gray-400">horas de conteudo</dd>
+                  <div className="flex flex-col items-center justify-center">
+                      <dt className="mb-2 text-3xl md:text-4xl font-extrabold">200</dt>
+                      <dd className="font-light text-gray-500 dark:text-gray-400">horas de conteudo</dd>
                   </div>
-                  <div class="flex flex-col items-center justify-center">
-                      <dt class="mb-2 text-3xl md:text-4xl font-extrabold">5</dt>
-                      <dd class="font-light text-gray-500 dark:text-gray-400">anos de mercado</dd>
+                  <div className="flex flex-col items-center justify-center">
+                      <dt className="mb-2 text-3xl md:text-4xl font-extrabold">5</dt>
+                      <dd className="font-light text-gray-500 dark:text-gray-400">anos de mercado</dd>
                   </div>
               </dl>
           </div>
