@@ -27,12 +27,12 @@ export default function Aulas() {
                 <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-4">
                     {aulas.subjects.map((subject, index) => (
                         <div key={index} className="items-center bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
+                        <a href={subject.link}>
                             <Image width={300} height={300} className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src={subject.img} alt={subject.alt}/>
                         </a>
                         <div className="p-5">
                             <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                <a href="#">{subject.name}</a>
+                                <a href={subject.link}>{subject.name}</a>
                             </h3>
                             <span className="text-gray-500 dark:text-gray-400">{subject.seniority}</span>
                             <p className="mt-2 mb-2 font-light text-gray-500 dark:text-gray-400">{subject.description}</p>
