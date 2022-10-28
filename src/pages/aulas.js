@@ -75,6 +75,6 @@ export default function Aulas() {
                     </ul>
             </div>
         </main>
-        <Footer></Footer>
+        <Footer/>
     </section>)
 }

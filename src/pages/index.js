@@ -14,9 +14,9 @@ export default function Home() {
         <div className="gap-16 items-center py-16 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6 ">
           <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400 ">
               <h1 className="text-2xl tracking-tight font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Clebson Augusto Fonseca</h1>
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Sobre mim:</h2>
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">🔭 Sobre mim:</h2>
               <p className="mb-4"> 
-                Me chamo Clebson, 🔭 atualmente trabalho na @Ledthinking e na @LedthinkingAcademy. Programo desde os meus 12 anos e busco sempre evoluir cada vez mais, para celebrar esses 10 anos de programação, resolvi criar esse blog para compartilhar um pouco do meu conhecimento, conquista e experiência com vocês.
+                Me chamo Clebson, programador como profissão e professor por paixão. Atualmente trabalho na @Ledthinking e na @LedthinkingAcademy, startups que fundei. Programo desde os meus 12 anos e busco sempre evoluir cada vez mais, para celebrar esses 10 anos de programação, resolvi criar esse blog para compartilhar um pouco do meu conhecimento, conquista e experiência com vocês.
               </p>
               <p>
                 🌱 Hoje meu foco em estudo é arquitetura limpa, web3.0, webassembly e japonês. Também curto trabalhar com open-source e participar de bastante hackathons, por mais que eu esteja sumidos nesses ultimos tempos.

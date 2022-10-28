@@ -5,7 +5,7 @@ import Navbar from "../../components/navbar/navbar";
 
 
 
-export default function AulaArticle({title, alt, coverImg, sectionBreadCumb, children}){
+export default function AulaArticle({title, valor, alt, coverImg, sectionBreadCumb, children}){
     const schemaData = {
         "@context": "http://schema.org/",
         "@type": "BreadcrumbList",
@@ -57,7 +57,9 @@ export default function AulaArticle({title, alt, coverImg, sectionBreadCumb, chi
                         <header className="mb-4 lg:mb-6 not-format">
                             <figure>
                                 <img className="rounded-xl" src={coverImg || "/placeholder.jpg"} alt={alt}/>
-                                <figcaption className=" text-center">{alt}</figcaption>
+                                <h2 className="text-2xl text-right">Valor do investimento:</h2>
+
+                                <figcaption className="mb-4 text-right text-4xl font-extrabold text-gray-900 dark:text-white ">RS<span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">{valor},00</span> a hora/aula.</figcaption>
                             </figure>
                             <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">{title}</h1>
                         </header>

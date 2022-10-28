@@ -18,6 +18,7 @@
         {
             "name": "Node.js",
             "img": "/aulas/node.png",
+            "link": "/aula/node",
             "alt": "Imagem representando aulas de Node.js",
             "seniority": "Junior ao senior",
             "description": "Ideal para você que quer aprender backend. Aprenda como funciona o node.js."

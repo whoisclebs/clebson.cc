@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Footer from "../components/footer/footer";
 import Navbar from "../components/navbar/navbar";
 
 export default function NotFound() {
@@ -17,6 +18,7 @@ export default function NotFound() {
                     </div>   
                 </div>
             </main>
+            <Footer/>
         </section>
     )
 }
