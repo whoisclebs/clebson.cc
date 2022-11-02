@@ -1,5 +1,6 @@
 import Image from 'next/future/image'
 import Head from 'next/head'
+import Link from 'next/link'
 import Footer from '../components/footer/footer'
 import Navbar from '../components/navbar/navbar'
 
@@ -10,31 +11,63 @@ export default function Home() {
       <Head>
         <title>Clebson Augusto Fonseca - Sobre min</title>
       </Head>
-      <main>
-        <div className="gap-16 items-center py-16 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6 ">
+      <main className="mt-32 mx-4">
+        <div className="py-16 px-8 mx-auto max-w-screen-xl text-left lg:grid lg:grid-cols-2 bg-regal-purple dark:bg-gray-800 border rounded-lg ">
+          <div className='flex-col items-center pb-12 md:pb-0'>
+            <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-3xl dark:text-white">
+              Chegou a hora de dominar sua nova stack de uma forma descomplicada.
+            </h1>
+            <p className="mb-8 text-lg font-normal text-gray-50 lg:text-xl dark:text-gray-400">
+              Te ajudo a entender o vasto mundo da programação.
+            </p>
+            <div className="flex flex-col space-y-4 sm:flex-row  sm:space-y-0 sm:space-x-4">
+              <Link href="https://calendly.com/clebson-augusto/60min" passHref>
+                <a
+                  className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-purple-700 rounded-lg bg-white focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+                >
+                  Agende uma aula
+                  <svg
+                    className="ml-2 -mr-1 w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </Link>
+              <Link href="https://ledthinking.com.br/bootcamps" passHref>
+                <a
+                  className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-purple-700 rounded-lg bg-white focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+                >
+                  Bootcamps
+                </a>
+              </Link>
+              <Link href="/free" passHref>
+                <a
+                  className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-purple-700 rounded-lg bg-white focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+                >
+                  Materiais gratuitos
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className='flex justify-center pt-0 sm:pt-8'>
+            <img src='/developer.png' width={450} />
+          </div>
+        </div>
+        <div className="gap-16 items-center  px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6 ">
+      
           <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400 ">
-              <h1 className="text-2xl tracking-tight font-extrabold text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Clebson Augusto Fonseca</h1>
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">🔭 Sobre mim:</h2>
-              <p className="mb-4"> 
-                Me chamo Clebson, programador como profissão e professor por paixão. Atualmente trabalho na @Ledthinking e na @LedthinkingAcademy, startups que fundei. Programo desde os meus 12 anos e busco sempre evoluir cada vez mais, para celebrar esses 10 anos de programação, resolvi criar esse blog para compartilhar um pouco do meu conhecimento, conquista e experiência com vocês.
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">🔭 Quem sou eu?</h2>
+              <h1 className="text-2xl tracking-tight font-extrabold text-black">Me chamo <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Clebson Augusto Fonseca</span></h1>
+              <p className="mb-4 text-justify"> 
+                Programador como profissão e professor por paixão. Atualmente trabalho na @Ledthinking e na @LedthinkingAcademy, startups que fundei. Programo desde os meus 12 anos e desde daquela época busco sempre evoluir cada vez mais, para celebrar esses 10 anos de programação, resolvi criar esse site para compartilhar um pouco da minha tragetoria e também servir como um diretório de tudo que produzo.
               </p>
-              <p>
-                🌱 Hoje meu foco em estudo é arquitetura limpa, web3.0, webassembly e japonês. Também curto trabalhar com open-source e participar de bastante hackathons, por mais que eu esteja sumidos nesses ultimos tempos.
-              </p>
-              <div className="flex justify-center pt-4">
-                <div className="inline-flex rounded-md shadow-sm" role="group">
-                  <a href="https://calendly.com/clebson-augusto/60min?month=2022-09&date=2022-09-05" className="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-l-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-                    Agendar uma aula
-                  </a>
-                  <a href="https://ledthinking.com.br/bootcamps" className="py-2 px-4 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-                    Bootcamps
-                  </a>
-                  <a href="https://www.youtube.com/channel/UCTXNglaqvIsBtXpNLe_KTsw" className="py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-r-md border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
-                    Materiais gratuitos
-                  </a>
-                </div>
-              </div>
-
           </div>
           <div className="grid grid-cols-2 gap-4 mt-8">
               <Image width={348.5} height={618} className="w-full rounded-lg" priority src="/clebson-2019.jpeg" alt="Clebson Augusto Fonseca no ano de 2019" />

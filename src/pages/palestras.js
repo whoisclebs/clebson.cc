@@ -5,7 +5,7 @@ import Navbar from '../components/navbar/navbar'
 export default function Sobre() {
   return (
     <section className="bg-white dark:bg-gray-900 min-h-screen">
-        <Navbar></Navbar>
+        <Navbar/>
         <Head>
             <title>Palestras</title>
         </Head>

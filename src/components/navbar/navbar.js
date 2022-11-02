@@ -16,9 +16,14 @@ export default function Navbar() {
     return (
         <nav className="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
-            <div className="hidden justify-between items-center w-full lg:flex md:w-auto" id="navbar-sticky-left">
+            <Link href="/" className="flex items-center">
+                <a>
+                    <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">CLEBSON<span className="bg-gradient-to-r from-blue-100 via-cyan-100 to-cyan-200 text-cyan-800 font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">.CC</span></span>
+                </a>
+            </Link>
+            <div className="hidden justify-between items-center w-full lg:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li>
+                <li>
                         <Link href="/">
                             <a className={`block py-2 pr-4 pl-3 ${selected === "" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >Inicio</a>
                         </Link>
@@ -43,15 +48,6 @@ export default function Navbar() {
                             <a className={`block py-2 pr-4 pl-3 ${selected === "palestras" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >Palestras</a>
                         </Link>
                     </li>
-                </ul>
-            </div>
-            <Link href="/" className="flex items-center">
-                <a>
-                    <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">CLEBSON<span className="bg-gradient-to-r from-blue-100 via-cyan-100 to-cyan-200 text-cyan-800 font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">.CC</span></span>
-                </a>
-            </Link>
-            <div className="hidden justify-between items-center w-full lg:flex md:w-auto md:order-1" id="navbar-sticky">
-                <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
                         <Link href="http://ledthinking.com.br/">
                             <a className={`block py-2 pr-4 pl-3 ${selected === "elearning" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >Academy</a>
