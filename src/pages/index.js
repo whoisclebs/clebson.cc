@@ -12,51 +12,53 @@ export default function Home() {
         <title>Clebson Augusto Fonseca - Sobre min</title>
       </Head>
       <main className="mt-32 mx-4">
-        <div className="py-16 px-8 mx-auto max-w-screen-xl text-left lg:grid lg:grid-cols-2 bg-regal-purple dark:bg-gray-800 border rounded-lg ">
-          <div className="pb-12 md:pb-0 items-center justify-center">
-            <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-3xl dark:text-white">
-              Chegou a hora de dominar sua nova stack de uma forma descomplicada.
-            </h1>
-            <p className="mb-8 text-lg font-normal text-gray-50 lg:text-xl dark:text-gray-400">
-              Te ajudo a entender o vasto mundo da programação.
-            </p>
-            <div className="flex flex-col space-y-4 sm:flex-row  sm:space-y-0 sm:space-x-4">
-              <Link href="https://calendly.com/clebson-augusto/60min" passHref>
-                <a
-                  className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-purple-700 rounded-lg bg-white focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-                >
-                  Agende uma aula
-                  <svg
-                    className="ml-2 -mr-1 w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
+      <div className="relative py-16 px-8 mx-auto max-w-screen-xl text-left lg:grid lg:grid-cols-2 bg-regal-purple dark:bg-gray-800 border rounded-lg ">
+          <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform translate-x-2 translate-y-2 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0" />
+          <span className="absolute inset-0 w-full h-full bg-regal-purple border-2 border-black " />
+          <div className="relative pb-12 md:pb-0 items-center justify-center">
+              <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-3xl dark:text-white">
+                Chegou a hora de dominar sua nova stack de uma forma descomplicada.
+              </h1>
+              <p className="mb-8 text-lg font-normal text-gray-50 lg:text-xl dark:text-gray-400">
+                Te ajudo a entender o vasto mundo da programação.
+              </p>
+              <div className="flex flex-col space-y-4 sm:flex-row  sm:space-y-0 sm:space-x-4">
+                <Link href="https://calendly.com/clebson-augusto/60min" passHref>
+                  <a
+                    className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-purple-700 rounded-lg bg-white focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
                   >
-                    <path
-                      fillRule="evenodd"
-                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </Link>
-              <Link href="https://ledthinking.com.br/bootcamps" passHref>
-                <a
-                  className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-purple-700 rounded-lg bg-white focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-                >
-                  Bootcamps
-                </a>
-              </Link>
-              <Link href="/free" passHref>
-                <a
-                  className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-purple-700 rounded-lg bg-white focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-                >
-                  Materiais gratuitos
-                </a>
-              </Link>
-            </div>
+                    Agende uma aula
+                    <svg
+                      className="ml-2 -mr-1 w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </Link>
+                <Link href="https://ledthinking.com.br/bootcamps" passHref>
+                  <a
+                    className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-purple-700 rounded-lg bg-white focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+                  >
+                    Bootcamps
+                  </a>
+                </Link>
+                <Link href="/free" passHref>
+                  <a
+                    className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-purple-700 rounded-lg bg-white focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+                  >
+                    Materiais gratuitos
+                  </a>
+                </Link>
+              </div>
           </div>
-          <div className="flex justify-center pt-0 sm:pt-8">
+          <div className="relative flex justify-center pt-0 sm:pt-8">
             <Image src="/developer.png" width={450} height={300} alt="Ilustração de um desenvolvedor"/>
           </div>
         </div>
