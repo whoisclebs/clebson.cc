@@ -9,6 +9,16 @@
             "name": "🔍 Depenspect",
             "url": "https://github.com/clebsonf/depenspect",
             "description": " Uma biblioteca para inspecionar pacotes npm."
+        },
+        {
+            "name": "🐻 Octobear Hub",
+            "url": "https://octobear.org/",
+            "description": "O Octobear Hub é um repositório de projetos open source."
+        },
+        {
+            "name": "🎙️ Ecma Today",
+            "url": "https://ecma.today/",
+            "description": "Ecma today é o seu newsletter/podcast sobre EcmaScript."
         }
     ]
 }

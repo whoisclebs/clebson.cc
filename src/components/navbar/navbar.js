@@ -48,21 +48,6 @@ export default function Navbar() {
                             <a className={`block py-2 pr-4 pl-3 ${selected === "palestras" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >Palestras</a>
                         </Link>
                     </li>
-                    <li className="flex items-center">
-                        <Link href="http://ledthinking.com.br/">
-                            <a className={`block py-2 pr-4 pl-3 ${selected === "elearning" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >Academy</a>
-                        </Link>
-                    </li>
-                    <li className="flex items-center">
-                        <Link href="https://ecma.today">
-                            <a className={`block py-2 pr-4 pl-3 ${selected === "sobre" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >ECMA.TODAY</a>
-                        </Link>
-                    </li>
-                    <li className="flex items-center">
-                        <Link href="https://octobear.org">
-                            <a className={`block py-2 pr-4 pl-3 dark:text-gray-400 bg-blue-700 rounded md:bg-transparent  md:p-0`}>Octobear Hub</a>
-                        </Link>
-                    </li>
                     <li>
                         <Link href="https://ko-fi.com/clebsonf">
                                 <button type="button" className="relative px-6 py-2 group">
@@ -172,54 +157,6 @@ export default function Navbar() {
                                     aria-current="page"
                                 >
                                     Palestras
-                                </span>
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                type="button"
-                                onClick={() => {
-                                    setToggleNav(!toggleNav)
-                                    router.push("http://ledthinking.com.br/")
-                                }}
-                            >
-                                <span
-                                    className="py-4 px-3 inline-block"
-                                    aria-current="page"
-                                >
-                                    Academy
-                                </span>
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                type="button"
-                                onClick={() => {
-                                    setToggleNav(!toggleNav)
-                                    router.push("http://ecma.today/")
-                                }}
-                            >
-                                <span
-                                    className="py-4 px-3 inline-block"
-                                    aria-current="page"
-                                >
-                                    ECMA.TODAY
-                                </span>
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                type="button"
-                                onClick={() => {
-                                    setToggleNav(!toggleNav)
-                                    router.push("http://octobear.org/")
-                                }}
-                            >
-                                <span
-                                    className="py-4 px-3 inline-block"
-                                    aria-current="page"
-                                >
-                                    Octobear Hub
                                 </span>
                             </button>
                         </li>
