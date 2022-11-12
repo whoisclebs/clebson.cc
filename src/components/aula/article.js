@@ -33,7 +33,7 @@ export default function AulaArticle({title, valor, alt, coverImg, sectionBreadCu
                 type='application/ld+json'
                 dangerouslySetInnerHTML={{__html: JSON.stringify(schemaData)}}
             />
-            <nav className="pt-20 px-5 py-3 w-full flex   justify-center text-gray-700 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
+            <nav className="pt-25 px-5 py-3 w-full flex   justify-center text-gray-700 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
                 <ol className="inline-flex space-x-1 md:space-x-3 mx-auto">
                         <li className="inline-flex items-center">
                             <Link href="/aulas">                    
