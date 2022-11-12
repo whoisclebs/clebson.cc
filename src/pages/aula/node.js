@@ -7,7 +7,7 @@ export default function Javascript(){
             alt="Banner da aula de javascript"
             coverImg="/aula/javascript.png"
             sectionBreadCumb="Node.js"
-            valor={50}
+            valor={70}
         >   
             <div className="flex justify-between items-center">
             </div>
