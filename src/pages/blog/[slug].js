@@ -61,8 +61,9 @@ export async function getStaticProps({ params }) {
 
 export default function Blog({ post: { source, post } }) {
     const router = useRouter();
+    console.log(router.asPath)
     const disqusConfig = {
-        url: router.asPath,
+        url: "https://clebson.cc/"+router.asPath,
         identifier: post.slug, // Single post id
         title: post.title // Single post title
     }
