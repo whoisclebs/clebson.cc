@@ -14,7 +14,7 @@ export default function BlogPage({ posts }) {
 
         <main className="py-24 flex justify-center">
           <div className='space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0'>
-          {posts.map((post) => {
+          {posts.reverse().map((post) => {
             return (
               <Link key={post} href={`/blog/${post.slug}`} passHref>
                 <a className='block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'>

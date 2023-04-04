@@ -9,9 +9,6 @@ const securityHeaders = [
 
 const nextConfig = {
   reactStrictMode: true,
-  future: {
-    webpack5: true,
-  },
   swcMinify: true,
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     if (!isServer) {
