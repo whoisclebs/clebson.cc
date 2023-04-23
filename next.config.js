@@ -8,6 +8,10 @@ const securityHeaders = [
 
 
 const nextConfig = {
+  i18n: {
+    locales: ['en-US','pt-BR'],
+    defaultLocale: 'en-US',
+  },
   reactStrictMode: true,
   swcMinify: true,
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {

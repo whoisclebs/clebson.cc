@@ -5,7 +5,6 @@ import { FaWindowClose } from "react-icons/fa";
 
 export default function Navbar() {
     const router = useRouter()
-
     const [selected, setSelected] = useState("");
     const [toggleNav, setToggleNav] = useState(false)
 
@@ -25,35 +24,25 @@ export default function Navbar() {
                 <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li className="flex items-center">
                         <Link href="/">
-                            <a className={`block py-2 pr-4 pl-3 ${selected === "" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >Inicio</a>
-                        </Link>
-                    </li>
-                    <li className="flex items-center">
-                        <Link href="/blog">
-                            <a className={`block py-2 pr-4 pl-3 ${selected === "blog" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >Blog</a>
+                            <a className={`block py-2 pr-4 pl-3 ${selected === "" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >Home</a>
                         </Link>
                     </li>
                     <li className="flex items-center">
                         <Link href="/projetos">
-                            <a className={`block py-2 pr-4 pl-3 ${selected === "projetos" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >Projetos</a>
-                        </Link>
-                    </li>
-                    <li className="flex items-center">
-                        <Link href="/aulas">
-                            <a className={`block py-2 pr-4 pl-3 ${selected === "aulas" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >Aulas</a>
+                            <a className={`block py-2 pr-4 pl-3 ${selected === "projetos" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >Projects</a>
                         </Link>
                     </li>
                     <li className="flex items-center">
                         <Link href="/palestras">
-                            <a className={`block py-2 pr-4 pl-3 ${selected === "palestras" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >Palestras</a>
+                            <a className={`block py-2 pr-4 pl-3 ${selected === "palestras" ? " dark:text-white" : " dark:text-gray-400" } bg-blue-700 rounded md:bg-transparent  md:p-0`} >Speeches</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href="https://ko-fi.com/clebsonf">
+                        <Link href="https://www.buymeacoffee.com/clebsonf">
                                 <button type="button" className="relative px-6 py-2 group">
                                     <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0" />
                                     <span className="absolute inset-0 w-full h-full bg-white border-2 border-black " />
-                                    <span className="relative text-black ">Me pague um ☕</span>
+                                    <span className="relative text-black ">Buy me a ☕</span>
                                 </button>
                         </Link>
                     </li>
@@ -92,23 +81,7 @@ export default function Navbar() {
                                     className="py-4 px-3 inline-block"
                                     aria-current="page"
                                 >
-                                    Inicio
-                                </span>
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                type="button"
-                                onClick={() => {
-                                    setToggleNav(!toggleNav)
-                                    router.push("/blog")
-                                }}
-                            >
-                                <span
-                                    className="py-4 px-3 inline-block"
-                                    aria-current="page"
-                                >
-                                    Blog
+                                    Home
                                 </span>
                             </button>
                         </li>
@@ -124,23 +97,7 @@ export default function Navbar() {
                                     className="py-4 px-3 inline-block"
                                     aria-current="page"
                                 >
-                                    Projetos
-                                </span>
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                type="button"
-                                onClick={() => {
-                                    setToggleNav(!toggleNav)
-                                    router.push("/aulas")
-                                }}
-                            >
-                                <span
-                                    className="py-4 px-3 inline-block"
-                                    aria-current="page"
-                                >
-                                    Aulas
+                                    Projects
                                 </span>
                             </button>
                         </li>
@@ -156,7 +113,7 @@ export default function Navbar() {
                                     className="py-4 px-3 inline-block"
                                     aria-current="page"
                                 >
-                                    Palestras
+                                    Speeches
                                 </span>
                             </button>
                         </li>
@@ -165,14 +122,14 @@ export default function Navbar() {
                                 type="button"
                                 onClick={() => {
                                     setToggleNav(!toggleNav)
-                                    router.push("https://ko-fi.com/clebsonf")
+                                    router.push("https://www.buymeacoffee.com/clebsonf")
                                 }}
                             >
                                 <span
                                     className="py-4 px-3 inline-block"
                                     aria-current="page"
                                 >
-                                    Me pague um ☕                   
+                                    Buy me a ☕                   
                                 </span>
                             </button>
                         </li>

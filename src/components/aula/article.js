@@ -3,8 +3,6 @@ import Script from "next/script";
 import Footer from "../../components/footer/footer";
 import Navbar from "../../components/navbar/navbar";
 
-
-
 export default function AulaArticle({title, valor, alt, coverImg, sectionBreadCumb, children}){
     const schemaData = {
         "@context": "http://schema.org/",
